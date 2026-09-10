@@ -152,6 +152,10 @@ button {
     height: 10px;
 }
 
+label {
+    display: none;
+}
+
 /* section */
 
 .main-section {
