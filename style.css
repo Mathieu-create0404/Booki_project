@@ -40,6 +40,8 @@ nav a:hover {
     color: rgb(0, 102, 255);
 }
 
+/* Partie header */
+
 h1, h2 {
     font-size: 22px;
 }
@@ -147,4 +149,112 @@ button {
 .icone-info img {
     width: 4px;
     height: 10px;
+}
+
+/* Partie section hebergement */
+
+.hebergement {
+    display: flex;
+    gap: 40px;
+}
+
+.hebergement-marseille {
+    border: 1px solid transparent;
+    background: #F2F2F2;
+    border-radius: 15px;
+    width: 871px;
+    height: 614px;
+    gap: 15px;
+}
+
+.populaire {
+      border: 1px solid transparent;
+    background: #F2F2F2;
+    border-radius: 15px;
+    width: 429px;
+    height: 614px;
+}
+
+.flex-hebergement {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 15px ;
+}
+
+.card {
+    border: 1px solid transparent;
+    background: #FFFFFF;
+    border-radius: 20px;
+    box-shadow: 0px 3px 15px 0px #0000001A;
+}
+
+.hebergement-marseille .card {
+    width: 250px;
+    height: 207px;
+}
+
+.hebergement-marseille .card > a > img:first-of-type {
+    width: 250px;
+    height: 124px;
+    border-radius: 20px 20px 0 0;
+    border: 5px solid transparent;
+    box-sizing: border-box;
+    object-fit: cover;
+}
+
+.hebergement-marseille h2, .hebergement-marseille h3 {
+    padding: 0 30px;
+}
+    
+.card-content h4, .card-content p, .card-content img{
+   padding: 4px 0;
+   margin: 0;
+}
+
+.card-content {
+    margin: 0 15px;
+}
+
+/* Populaire */
+
+.flex-titlepop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px 0px 30px;
+}
+
+.populaire .card a {
+    display: flex;
+    width: 369px;
+    height: 146px;
+}
+
+.populaire .card > a > img:first-of-type {
+    width: 123px;
+    height: 146px;
+    border-radius: 20px 0 0 20px;
+    border: 5px solid transparent;
+    box-sizing: border-box;
+    object-fit: cover;
+}
+
+.flex-populaire {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 15px 30px;
+}
+
+.card-contentpop {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 15px 0 8px 16px;
+}
+
+.card-contentpop h4, .card-contentpop p, .card-contentpop img {
+    margin: 0;
 }
