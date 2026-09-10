@@ -11,6 +11,7 @@ nav {
 
 ul {
     list-style: none;
+    padding: 0;
 }
 
 nav ul {
@@ -59,7 +60,7 @@ h4 {
     font-size: 16px;
 }
 
-.zone-recherche {
+.search-area {
     display: flex;
 }
 
@@ -88,26 +89,26 @@ button {
     cursor: pointer;
 }
 
-.zone-recherche input {
+.search-area input {
     border: 1px solid #F2F2F2;
     width: 190px;
 }
 
-.flex-filtres {
+.flex-filters {
     display: flex;
     gap: 15px;
     align-items: center;
     margin-top: 35px;
 }
 
-.flex-filtres ul {
+.flex-filters ul {
     display: flex;
     gap: 15px;
     padding-left: 0;
     align-items: center;
 }
 
-.flex-filtres a {
+.flex-filters a {
     display: flex;
     align-items: center;
     gap: 10px;
@@ -119,12 +120,12 @@ button {
     transition: 0.3s;
 }
 
-.flex-filtres a:hover {
+.flex-filters a:hover {
     background-color: #DEEBFF;
 }
 
 
-.flex-filtres img {
+.flex-filters img {
     width: 22px;
     height: 22px;
 }
@@ -151,14 +152,14 @@ button {
     height: 10px;
 }
 
-/* Partie section hebergement */
+/* section */
 
-.hebergement {
+.main-section {
     display: flex;
     gap: 40px;
 }
 
-.hebergement-marseille {
+.left-section {
     border: 1px solid transparent;
     background: #F2F2F2;
     border-radius: 15px;
@@ -167,15 +168,7 @@ button {
     gap: 15px;
 }
 
-.populaire {
-      border: 1px solid transparent;
-    background: #F2F2F2;
-    border-radius: 15px;
-    width: 429px;
-    height: 614px;
-}
-
-.flex-hebergement {
+.flex-left-section {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -184,18 +177,22 @@ button {
 }
 
 .card {
-    border: 1px solid transparent;
     background: #FFFFFF;
     border-radius: 20px;
     box-shadow: 0px 3px 15px 0px #0000001A;
+    transition: 0.3s;
 }
 
-.hebergement-marseille .card {
+.card:hover {
+    transform: scale(1.05);
+}
+
+.left-section .card {
     width: 250px;
     height: 207px;
 }
 
-.hebergement-marseille .card > a > img:first-of-type {
+.left-section .card > a > img:first-of-type {
     width: 250px;
     height: 124px;
     border-radius: 20px 20px 0 0;
@@ -204,7 +201,7 @@ button {
     object-fit: cover;
 }
 
-.hebergement-marseille h2, .hebergement-marseille h3 {
+.left-section h2, .left-section h3 {
     padding: 0 30px;
 }
     
@@ -217,22 +214,30 @@ button {
     margin: 0 15px;
 }
 
-/* Populaire */
+/* right-section */
 
-.flex-titlepop {
+.right-section {
+      border: 1px solid transparent;
+    background: #F2F2F2;
+    border-radius: 15px;
+    width: 429px;
+    height: 614px;
+}
+
+.flex-title-right {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 15px 30px 0px 30px;
 }
 
-.populaire .card a {
+.right-section .card a {
     display: flex;
     width: 369px;
     height: 146px;
 }
 
-.populaire .card > a > img:first-of-type {
+.right-section .card > a > img:first-of-type {
     width: 123px;
     height: 146px;
     border-radius: 20px 0 0 20px;
@@ -241,20 +246,64 @@ button {
     object-fit: cover;
 }
 
-.flex-populaire {
+.flex-right-section {
     display: flex;
     flex-direction: column;
     gap: 30px;
     padding: 15px 30px;
 }
 
-.card-contentpop {
+.card-content-rs {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     margin: 15px 0 8px 16px;
 }
 
-.card-contentpop h4, .card-contentpop p, .card-contentpop img {
+.card-content-rs h4, .card-content-rs p, .card-content-rs img {
     margin: 0;
+}
+
+/* second section */
+
+.flex-second-section {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 35px;
+}
+
+.flex-second-section .card {
+    width: 297px;
+    height: 439px;
+}
+
+.flex-second-section img {
+    display: block;
+    width: 100%;
+    height: 380px;
+    border-radius: 20px 20px 0 0;
+    object-fit: cover;
+}
+
+.flex-second-section .card a h4 {
+    margin: 20px;
+}
+
+/*footer */
+
+.footer {
+    border: 1px solid transparent;
+    background: #F2F2F2;
+    display: flex;
+    width: 1340px;
+    height: 163px;
+}
+
+.about {
+    width: 33%;
+    margin: 0 0 20px 20px;
+}
+
+.about li {
+    padding: 0 0 15px 0;
 }
