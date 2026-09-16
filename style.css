@@ -174,9 +174,9 @@ label {
     margin-top: 30px;
 }
 
-.left-section h3 {
+.more {
     cursor: pointer;
-    margin-bottom: 30px;
+    margin: 15px 15px 30px 0;
 }
 
 .left-section {
@@ -219,8 +219,13 @@ label {
     object-fit: cover;
 }
 
-.left-section h2, .left-section h3 {
-    padding: 0 30px;
+.left-section h2 {
+    padding: 0 30px
+}
+
+.left-section h3 {
+    padding: 5px 0;
+    margin: 0;
 }
     
 .card-content h4, .card-content p, .card-content img{
@@ -274,7 +279,7 @@ label {
     margin: 15px 0 8px 16px;
 }
 
-.card-content-rs h4, .card-content-rs p, .card-content-rs img {
+.card-content-rs h3, .card-content-rs p, .card-content-rs img {
     margin: 0;
 }
 
@@ -293,7 +298,7 @@ label {
     object-fit: cover;
 }
 
-.flex-second-section .card a h4 {
+.flex-second-section .card a h3 {
     margin: 17px;
 }
 
@@ -323,11 +328,11 @@ label {
 
 @media (min-width: 1440px) {
     body {
-         margin: 0 auto;
+         margin: 0 10em;
          padding: 0 15px;
     }
 }
-
+/* Format tablette*/
 @media (min-width: 768px) and (max-width: 1024px) {
     body {
         margin: 0 20px;
@@ -361,6 +366,7 @@ label {
     }
 }
 
+/* Format Mobile */
 @media (max-width: 767px) {
     body {
         margin: 0;
@@ -454,6 +460,10 @@ label {
         padding: 0 0 0 15px;
     }
 
+    .flex-filters p {
+        font-size: 14px;
+    }
+
     .main-section {
         display: flex;
         flex-direction: column-reverse;
@@ -521,7 +531,7 @@ label {
     }
 
     .about {
-        width: 100%;
+        width: auto;
         margin: 0 0 30px 30px;
     }
 
